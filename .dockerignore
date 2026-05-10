@@ -1,0 +1,46 @@
+# Virtual environment (very large - exclude entirely)
+
+venv
+venv/
+.venv
+.venv/
+ENV
+ENV/
+
+# Data directory (all subdirs are mounted as Docker volumes at runtime)
+
+data
+
+# TGL C++ library and build artifacts
+
+tgl
+
+# Python bytecode
+
+**pycache** \*_/**pycache**
+_.pyc
+_.pyo
+_.pyd
+\*.egg-info
+
+# Build artifacts
+
+build
+dist
+htmlcov
+.pytest_cache
+.coverage
+
+# Source control and editor
+
+.git
+.vscode
+
+# Secrets / env overrides
+
+.env
+.env.\*
+
+# Logs
+
+\*.log
